@@ -242,6 +242,7 @@ const submitForm = async () => {
       return
     }
 
+    
     // Enviar la petición POST
     const response = await useFetch('teinvito-b3dkbfewgubvc3e6.southcentralus-01.azurewebsites.net/api/Person', {
       method: 'POST',
