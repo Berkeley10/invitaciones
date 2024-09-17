@@ -244,10 +244,11 @@ const submitForm = async () => {
 
     
     // Enviar la petición POST
-    const response = await useFetch('http://localhost:5222/api/Person', {
+    const response = await useFetch('teinvito-b3dkbfewgubvc3e6.southcentralus-01.azurewebsites.net/api/Person', {
       method: 'POST',
       body: formData,
       headers: {
+        'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
     })
