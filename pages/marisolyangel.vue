@@ -358,7 +358,7 @@ const submitForm = async () => {
       method: 'PUT',
       body: formData,
       headers: {
-        'Accept': '*/*',
+        
         'Content-Type': 'application/json',
       },
     })
