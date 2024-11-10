@@ -304,11 +304,11 @@ const isPressedYes = ref('')
 const modules = [Autoplay, EffectFade, Navigation];
 
 const images = [
-  "_nuxt/assets/images/7.jpg",
-  "_nuxt/assets/images/10.jpg",
-  "_nuxt/assets/images/9.jpg",
-  "_nuxt/assets/images/11.jpg",
-  "_nuxt/assets/images/12.jpg",
+  "/assets/images/7.jpg",
+  "/assets/images/10.jpg",
+  "/assets/images/9.jpg",
+  "/assets/images/11.jpg",
+  "/assets/images/12.jpg",
 ];
 
 const slides = [
