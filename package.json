@@ -12,7 +12,9 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "nuxt": "^3.13.0",
-    "vue": "latest"
+    "swiper": "^11.1.14",
+    "vue": "latest",
+    "vue-flux": "^7.0.0-beta.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

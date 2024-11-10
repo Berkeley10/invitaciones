@@ -3,11 +3,10 @@
         asdas
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+
 </script>
-<style lang="">
-    
-</style>
