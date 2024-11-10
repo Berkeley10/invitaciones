@@ -358,7 +358,7 @@ const submitForm = async () => {
       method: 'POST',
       body: formData,
       headers: {
-        'Accept': 'application/json',
+        'Accept': '*/*',
         'Content-Type': 'application/json',
       },
     })
