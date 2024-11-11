@@ -333,12 +333,12 @@ console.log(uniqueId); // Ejemplo de salida: 1636397289689-4d9fjk3h9
 const submitForm = async () => {
   try {
     // Construir el objeto de datos para enviar
-    confirmed.value = attendanceYes.value ? true : attendanceNo.value ? false : null
+    
     const formData = {
       id: generateUniqueId(),
       confirmation_id: uniqueId,
       event_id: "marisolyangel",
-      attendance: confirmed.value,
+      attendance: confirmation.value,
       confirmation_date: Date.now(),
       guest_name: name.value,
       phone: number.value,
