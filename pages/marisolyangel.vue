@@ -341,6 +341,7 @@ const submitForm = async () => {
       attendance: confirmation.value,
       confirmation_date: Date.now(),
       guest_name: name.value,
+      guest_count: guestCount.value,
       phone: number.value,
       notes: "",
 
