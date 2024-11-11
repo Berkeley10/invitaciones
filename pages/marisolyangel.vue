@@ -357,11 +357,13 @@ const submitForm = async () => {
     // Enviar la petición POST
     const response = await useFetch('https://tzty38v9ki.execute-api.us-east-2.amazonaws.com/dev/confirmations', {
       method: 'PUT',
-      body: JSON.stringify(formData),  // Asegura que formData sea un JSON string
+      mode: "cors",
       headers: {
-        
+      
         'Content-Type': 'application/json',
       },
+
+      body: JSON.stringify(formData),  // Asegura que formData sea un JSON string
     })
 
     // Comprobar la respuesta
