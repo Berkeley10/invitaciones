@@ -359,8 +359,8 @@ const submitForm = async () => {
       method: 'PUT',
       mode: "cors",
       headers: {
-      
         'Content-Type': 'application/json',
+        'Accept': 'application/json'         // Aceptar JSON
       },
 
       body: JSON.stringify(formData),  // Asegura que formData sea un JSON string
