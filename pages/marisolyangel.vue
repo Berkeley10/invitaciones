@@ -329,7 +329,7 @@ function generateUniqueId() {
 
 // Ejemplo de uso:
 const uniqueId = generateUniqueId();
-console.log(uniqueId); // Ejemplo de salida: 1636397289689-4d9fjk3h9
+// console.log(uniqueId); // Ejemplo de salida: 1636397289689-4d9fjk3h9
 
 
 const submitForm = async () => {
@@ -362,7 +362,7 @@ const submitForm = async () => {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Access-Control-Allow-Origin': '*', // Puedes especificar el dominio aquí en lugar de '*', como 'https://tu-dominio.com'
+        'Access-Control-Allow-Origin': 'https://www.teinvito.nl/',
         'Access-Control-Allow-Headers': 'Content-Type, Authorization',
         'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Especifica los métodos que va a permitir tu API
       },
@@ -372,7 +372,7 @@ const submitForm = async () => {
 
     // Comprobar la respuesta
     if (response.error) {
-      console.error('Error al enviar el formulario', response.error)
+      console.error(response)
     } else {
       alert('Formulario enviado correctamente.')
     }
@@ -416,18 +416,18 @@ function animationsScroll() {
     if (scrollTop > 10) {
       if (!itsPlay.value) {
         itsPlay.value = true
-        console.log('play' + itsPlay.value)
+        // console.log('play' + itsPlay.value)
         const audio = new Audio('/song.mp3') // Ruta del archivo de audio en la carpeta public
         audio.volume = 0.8
         audio.play().catch(error => {
-          console.error("Error al reproducir el audio", error)
+          // console.error("Error al reproducir el audio", error)
 
         })
       }
 
 
     }
-    console.log(scrollTop)
+    // console.log(scrollTop)
 
 
 
