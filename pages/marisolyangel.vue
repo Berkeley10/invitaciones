@@ -182,7 +182,8 @@
               'bg-black': !isPressedYes,
               'bg-white': isPressedYes,
 
-            }" class="w-36 text-base border-black flex items-center border border-2 justify-center  h-8  rounded-lg text-center "
+            }"
+              class="w-36 text-base border-black flex items-center border border-2 justify-center  h-8  rounded-lg text-center "
               @click="confirmation = true, isPressedYes = true">
 
               <span :class="{
@@ -196,7 +197,8 @@
               'bg-black': isPressedYes,
               'bg-white': !isPressedYes,
 
-            }" class="w-36 text-base border-black flex items-center border border-2 justify-center  h-8  rounded-lg text-center "
+            }"
+              class="w-36 text-base border-black flex items-center border border-2 justify-center  h-8  rounded-lg text-center "
               @click="confirmation = false, isPressedYes = false">
 
               <span :class="{
@@ -333,7 +335,7 @@ console.log(uniqueId); // Ejemplo de salida: 1636397289689-4d9fjk3h9
 const submitForm = async () => {
   try {
     // Construir el objeto de datos para enviar
-    
+
     const formData = {
       id: generateUniqueId(),
       confirmation_id: uniqueId,
@@ -359,7 +361,10 @@ const submitForm = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'         // Aceptar JSON
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*', // Puedes especificar el dominio aquí en lugar de '*', como 'https://tu-dominio.com'
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Especifica los métodos que va a permitir tu API
       },
 
       body: JSON.stringify(formData),  // Asegura que formData sea un JSON string
