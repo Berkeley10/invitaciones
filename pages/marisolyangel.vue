@@ -361,13 +361,9 @@ const submitForm = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': 'https://www.teinvito.nl/',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Especifica los métodos que va a permitir tu API
+        'Accept': '*/*',
       },
-
-      body: JSON.stringify(formData),  // Asegura que formData sea un JSON string
+      body: JSON.stringify(formData),  
     })
 
     // Comprobar la respuesta
