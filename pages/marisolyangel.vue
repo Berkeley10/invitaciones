@@ -369,8 +369,7 @@ const submitForm = async () => {
     if (response.error) {
       console.error(response)
     } else {
-      alert('Formulario enviado correctamente.')
-    }
+   }
   } catch (error) {
     console.error('Error en la solicitud', error)
   }
